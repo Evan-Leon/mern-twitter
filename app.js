@@ -27,15 +27,15 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-    const user = new User({
-        handle: 'bob',
-        email: 'bob@bobson.com',
-        password: '123456'
-    })
-    user.save()
-    res.send("bloop");
-});
+// app.get("/", (req, res) => {
+//     const user = new User({
+//         handle: 'bob',
+//         email: 'bob@bobson.com',
+//         password: '123456'
+//     })
+//     user.save()
+//     res.send("bloop");
+// });
 
 const port = process.env.PORT || 5000;
 
